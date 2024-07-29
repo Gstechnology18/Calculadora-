@@ -1,0 +1,74 @@
+/* Estilo global do body */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Cor de fundo suave para contraste */
+  }
+  
+  /* Estilo da calculadora */
+  .calculator {
+    width: 300px; /* Aumentar a largura da calculadora */
+    padding: 20px; /* Aumentar o padding para mais espaçamento interno */
+    border: 5px solid #fff200;
+    border-radius: 10px; /* Borda mais arredondada para um visual mais suave */
+    background-color: #d000ff; /* Cor de fundo para a calculadora */
+    color: violet; /* Cor do texto na calculadora */
+  }
+  
+  /* Estilo da área de exibição */
+  .display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border: 1px solid #fff200;
+    border-radius: 5px;
+    background-color: #e7ff4b; /* Cor de fundo para a tela */
+    margin-bottom: 15px; /* Espaço entre a tela e os botões */
+    height: 80px; /* Definir uma altura fixa para a área de exibição */
+    justify-content: center; /* Centralizar verticalmente */
+  }
+  
+  /* Estilo da entrada e resultado */
+  .input, .result {
+    font-size: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right; /* Alinhar o texto à direita */
+  }
+  
+  /* Estilo dos botões */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Aumentar o espaço entre os botões */
+  }
+  
+  button {
+    padding: 20px; /* Aumentar o padding para maior área de clique */
+    font-size: 1.5em; /* Aumentar o tamanho da fonte dos botões */
+    cursor: pointer;
+    border: 1px solid #e0ff15;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s; /* Transição suave para o fundo dos botões */
+  }
+  
+  button:hover {
+    background-color: #9600f4; /* Cor de fundo ao passar o mouse */
+  }
+  
+  button.equal {
+    grid-column: span 4;
+    background-color: #e0ff15; /* Cor de fundo para o botão de igual */
+    color: #d000ff;
+  }
+  
+  button.equal:hover {
+    background-color: #a658ff; /* Cor de fundo ao passar o mouse */
+  }
+  
